@@ -4,6 +4,8 @@ StudyBuddy-Django is a real-time chat application built using Django. It allows 
 
 The project is hosted on Vercel, and the PostgreSQL database is hosted on Railway.
 
+This project is based on the work of Dennis Ivy. You can find the original project at [divanov11/StudyBud](https://github.com/divanov11/StudyBud).
+
 ## Features
 
 -   Real-time chat functionality
@@ -64,3 +66,54 @@ To run the StudyBuddy-Django project locally, follow these steps:
     ```
 
 8. Open your web browser and navigate to `http://localhost:8000` to access the StudyBuddy-Django application.
+
+## Usage
+
+Once you have the StudyBuddy-Django application up and running, follow these steps to use the application:
+
+1. Register a new account or log in with existing credentials.
+
+2. Create a new chat room or join an existing one.
+
+3. Start sending and receiving real-time messages in the chat room.
+
+4. Customize the application as per your requirements or add additional features as needed.
+
+## Technologies Used
+
+The StudyBuddy-Django project utilizes the following technologies:
+
+    - Django: A high-level Python web framework for building web applications.
+
+    - PostgreSQL: A powerful open-source relational database system.
+
+    - Vercel: A cloud platform for static sites and serverless functions.
+
+    - Railway: A hosting platform for databases.
+
+## Contributing
+
+Contributions to StudyBuddy-Django are welcome! If you find any issues or have suggestions for improvements, please open an issue on the GitHub repository.
+
+1. Fork the repository.
+
+2. Create a new branch for your feature or bug fix:
+
+    ```shell
+    git checkout -b my-feature
+    ```
+
+3. Make your changes and commit them:
+
+    ```shell
+    git commit -m "Add my feature"
+    ```
+
+4. Push your changes to the branch:
+
+    ```shell
+    git push origin my-feature
+
+    ```
+
+5. Open a pull request on the GitHub repository, describing your changes and referencing the related issue (if applicable).
