@@ -29,7 +29,7 @@ SECRET_KEY = str(os.environ.get("SECRET_KEY", "Bad-key"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["study-buddy-django.vercel.app"]
 
 
 # Application definition
