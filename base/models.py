@@ -8,7 +8,10 @@ class User(AbstractUser):
     email = models.EmailField(unique=True, null=True)
     bio = models.TextField(null=True)
 
-    avatar = models.ImageField(null=True, default="django-default-avatar.jpg")
+    avatar = models.URLField(
+        null=True,
+        default="https://api.dicebear.com/6.x/personas/svg?seed=django-default-avatar",
+    )
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

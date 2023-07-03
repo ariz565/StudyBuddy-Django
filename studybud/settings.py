@@ -27,9 +27,9 @@ load_dotenv()
 SECRET_KEY = str(os.environ.get("SECRET_KEY", "Bad-key"))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["study-buddy-django.vercel.app"]
+ALLOWED_HOSTS = ["study-buddy-django.vercel.app", "*"]
 
 
 # Application definition
@@ -135,10 +135,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles" / "static"
-
-MEDIA_URL = "/static/media/"
-
-MEDIA_ROOT = BASE_DIR / "staticfiles" / "static" / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
