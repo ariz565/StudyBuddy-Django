@@ -27,9 +27,9 @@ load_dotenv()
 SECRET_KEY = str(os.environ.get("SECRET_KEY", "Bad-key"))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["study-buddy-django.vercel.app", "*"]
+ALLOWED_HOSTS = ["study-buddy-django.vercel.app"]
 
 
 # Application definition
