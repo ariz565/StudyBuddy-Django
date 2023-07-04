@@ -5,7 +5,6 @@ from django.db import models
 # Replace the default User model with a custom one
 class User(AbstractUser):
     name = models.CharField(max_length=200, null=True)
-    username = models.CharField(max_length=200, unique=True)
     email = models.EmailField(unique=True, null=True)
     bio = models.TextField(null=True)
 
@@ -14,7 +13,7 @@ class User(AbstractUser):
         default="https://api.dicebear.com/6.x/personas/svg?seed=django-default-avatar",
     )
 
-    USERNAME_FIELD = "username"
+    USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
 
