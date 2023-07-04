@@ -124,6 +124,7 @@ def home(request):
     context = {
         "rooms": rooms,
         "topics": topics,
+        "topics_count": len(topics),
         "room_count": room_count,
         "room_messages": room_messages,
     }
@@ -361,7 +362,7 @@ def topicsPage(request):
     topics = Topic.objects.filter(name__icontains=q)
 
     # Context dictionary
-    context = {"topics": topics}
+    context = {"topics": topics, "topics_count": len(topics)}
 
     # Render the topics page template
     return render(request, "base/topics.html", context)
