@@ -2,7 +2,7 @@
 
 StudyBuddy-Django is a real-time chat application built using Django. It allows users to communicate in real-time, providing a convenient platform for study groups, collaborative projects, or general conversations.
 
-The project is hosted on Vercel, and the PostgreSQL database is hosted on Railway.
+The project is hosted on Vercel, and the MongoDB is used as the database.
 
 This project is based on the work of Dennis Ivy. You can find the original project at [divanov11/StudyBud](https://github.com/divanov11/StudyBud).
 
@@ -50,7 +50,7 @@ To run the StudyBuddy-Django project locally, follow these steps:
 
 5. Set up the database:
 
-    - Create a PostgreSQL database (either locally or on a hosting platform like Railway).
+    - Create a MongoDB database (either locally or on a hosting platform like MongoDB Atlas).
     - Update the database configuration in `settings.py` with your database credentials.
 
 6. Apply database migrations:
@@ -89,7 +89,7 @@ The StudyBuddy-Django project utilizes the following technologies:
 
     - Vercel: A cloud platform for static sites and serverless functions.
 
-    - Railway: A hosting platform for databases.
+    - MongoDB Atlas: MongoDB database hosting.
 
 ## Contributing
 
