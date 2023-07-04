@@ -188,6 +188,7 @@ def userProfile(request, pk):
         "rooms": rooms,
         "room_messages": room_messages,
         "topics": topics,
+        "topics_count": len(topics),
     }
 
     # Render the user profile page template
@@ -223,7 +224,7 @@ def createRoom(request):
         return redirect("/")
 
     # Context dictionary
-    context = {"form": form, "topics": topics}
+    context = {"form": form, "topics": topics, "topics_count": len(topics)}
 
     # Render the create room page template
     return render(request, "base/room_form.html", context)
@@ -269,7 +270,12 @@ def updateRoom(request, pk):
         return redirect("/")
 
     # Context dictionary
-    context = {"form": form, "topics": topics, "room": room}
+    context = {
+        "form": form,
+        "topics": topics,
+        "room": room,
+        "topics_count": len(topics),
+    }
 
     # Render the update room page template
     return render(request, "base/room_form.html", context)
